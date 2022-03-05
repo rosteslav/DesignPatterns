@@ -1,4 +1,5 @@
-﻿using DecoratorPattern.Senders;
+﻿using DecoratorPattern.Callers.Interfaces;
+using DecoratorPattern.Senders;
 
 namespace DecoratorPattern
 {
@@ -6,11 +7,11 @@ namespace DecoratorPattern
     {
         static void Main()
         {
-            var smsSender = new SmsSender();
-            var slackSender = new SlackSender(smsSender);
-            var facebookSender = new FacebookSender(slackSender);
+            ISender baseSender = new SmsSender();
+            baseSender = new SlackSender(baseSender);
+            baseSender = new FacebookSender(baseSender);
 
-            facebookSender.Send("Hello!");
+            baseSender.Send("Hello!");
         }
     }
 }
