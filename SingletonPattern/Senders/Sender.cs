@@ -4,7 +4,7 @@ namespace SingletonPattern.Senders
 {
     public sealed class Sender
     {
-        private static Sender instance = null;
+        private static volatile Sender instance = null;
         private static readonly object padlock = new object();
 
         public static Sender Instance
