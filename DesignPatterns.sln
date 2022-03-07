@@ -33,6 +33,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CompositePattern", "Composi
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FacadePattern", "FacadePattern\FacadePattern.csproj", "{0F059697-392A-4E7A-A0C4-F2ECE8B225C8}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FlyweightPattern", "FlyweightPattern\FlyweightPattern.csproj", "{EC3BD5D3-DD9E-4255-A50F-95E91F38AA80}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -87,6 +89,10 @@ Global
 		{0F059697-392A-4E7A-A0C4-F2ECE8B225C8}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0F059697-392A-4E7A-A0C4-F2ECE8B225C8}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0F059697-392A-4E7A-A0C4-F2ECE8B225C8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EC3BD5D3-DD9E-4255-A50F-95E91F38AA80}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EC3BD5D3-DD9E-4255-A50F-95E91F38AA80}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EC3BD5D3-DD9E-4255-A50F-95E91F38AA80}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EC3BD5D3-DD9E-4255-A50F-95E91F38AA80}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -104,6 +110,7 @@ Global
 		{FAEDEE43-492D-4726-8290-6263422D55DF} = {589DBA65-CEAA-4A69-8899-689911D1FE60}
 		{64A0C2E4-A3E9-43C7-BBEC-66ACBD51C460} = {589DBA65-CEAA-4A69-8899-689911D1FE60}
 		{0F059697-392A-4E7A-A0C4-F2ECE8B225C8} = {589DBA65-CEAA-4A69-8899-689911D1FE60}
+		{EC3BD5D3-DD9E-4255-A50F-95E91F38AA80} = {589DBA65-CEAA-4A69-8899-689911D1FE60}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {8BBB542C-3E03-4AB5-B8DF-D5E7E3B79F9F}
