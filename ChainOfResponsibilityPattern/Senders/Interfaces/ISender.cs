@@ -1,4 +1,4 @@
-﻿namespace ChainOfResponsibility.Senders.Interfaces
+﻿namespace ChainOfResponsibilityPattern.Senders.Interfaces
 {
     public interface ISender
     {

@@ -1,6 +1,6 @@
-﻿using ChainOfResponsibility.Senders.Interfaces;
+﻿using ChainOfResponsibilityPattern.Senders.Interfaces;
 
-namespace ChainOfResponsibility.Senders
+namespace ChainOfResponsibilityPattern.Senders
 {
     public abstract class AbstractSender : ISender
     {

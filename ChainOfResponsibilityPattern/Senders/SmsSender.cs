@@ -1,7 +1,7 @@
-﻿using ChainOfResponsibility.Senders.Interfaces;
+﻿using ChainOfResponsibilityPattern.Senders.Interfaces;
 using System;
 
-namespace ChainOfResponsibility.Senders
+namespace ChainOfResponsibilityPattern.Senders
 {
     public class SmsSender : AbstractSender, ISender
     {

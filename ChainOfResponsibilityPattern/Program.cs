@@ -1,7 +1,7 @@
-﻿using ChainOfResponsibility.Senders;
-using ChainOfResponsibility.Senders.Interfaces;
+﻿using ChainOfResponsibilityPattern.Senders;
+using ChainOfResponsibilityPattern.Senders.Interfaces;
 
-namespace ChainOfResponsibility
+namespace ChainOfResponsibilityPattern
 {
     class Program
     {
