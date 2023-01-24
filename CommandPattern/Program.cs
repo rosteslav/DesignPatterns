@@ -4,21 +4,12 @@ using CommandPattern.Executors;
 using CommandPattern.Senders;
 using CommandPattern.Senders.Interfaces;
 
-namespace CommandPattern
-{
-    class Program
-    {
-        static void Main()
-        {
-            ISender sender = new SmsSender();
+ISender sender = new SmsSender();
 
-            ICommand helloCommand = new HelloCommand(sender);
-            ICommand timeCommand = new TimeCommand(sender);
+ICommand helloCommand = new HelloCommand(sender);
+ICommand timeCommand = new TimeCommand(sender);
 
-            Executor executor = new Executor(helloCommand, timeCommand);
+Executor executor = new Executor(helloCommand, timeCommand);
 
-            executor.SayHello();
-            executor.TellTime();
-        }
-    }
-}
+executor.SayHello();
+executor.TellTime();
