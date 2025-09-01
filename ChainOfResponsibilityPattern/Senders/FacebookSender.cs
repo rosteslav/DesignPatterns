@@ -1,13 +1,11 @@
 ﻿using ChainOfResponsibilityPattern.Senders.Interfaces;
-using System;
 
-namespace ChainOfResponsibilityPattern.Senders
+namespace ChainOfResponsibilityPattern.Senders;
+
+public class FacebookSender : AbstractSender, ISender
 {
-    public class FacebookSender : AbstractSender, ISender
+    protected override void SendMessage(string message)
     {
-        protected override void SendMessage(string message)
-        {
-            Console.WriteLine($"Sending '{message}' to Facebook...");
-        }
+        Console.WriteLine($"Sending '{message}' to Facebook...");
     }
 }

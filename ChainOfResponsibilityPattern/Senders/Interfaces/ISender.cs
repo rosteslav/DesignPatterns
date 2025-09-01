@@ -1,8 +1,7 @@
-﻿namespace ChainOfResponsibilityPattern.Senders.Interfaces
+﻿namespace ChainOfResponsibilityPattern.Senders.Interfaces;
+
+public interface ISender
 {
-    public interface ISender
-    {
-        ISender Next { set; }
-        void Send(string message);
-    }
+    ISender Next { set; }
+    void Send(string message);
 }

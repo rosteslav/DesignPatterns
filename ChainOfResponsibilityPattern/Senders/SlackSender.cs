@@ -1,13 +1,11 @@
 ﻿using ChainOfResponsibilityPattern.Senders.Interfaces;
-using System;
 
-namespace ChainOfResponsibilityPattern.Senders
+namespace ChainOfResponsibilityPattern.Senders;
+
+public class SlackSender : AbstractSender, ISender
 {
-    public class SlackSender : AbstractSender, ISender
+    protected override void SendMessage(string message)
     {
-        protected override void SendMessage(string message)
-        {
-            Console.WriteLine($"Sending '{message}' to Slack...");
-        }
+        Console.WriteLine($"Sending '{message}' to Slack...");
     }
 }

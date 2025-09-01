@@ -1,39 +1,32 @@
 ﻿using ChainOfResponsibilityPattern.Senders.Interfaces;
 
-namespace ChainOfResponsibilityPattern.Senders
+namespace ChainOfResponsibilityPattern.Senders;
+
+public abstract class AbstractSender : ISender
 {
-    public abstract class AbstractSender : ISender
+    private AbstractSender next;
+
+    public ISender Next
     {
-        private AbstractSender next;
-
-        public ISender Next
+        set
         {
-            set
-            {
-                AbstractSender lastSender = this;
+            AbstractSender lastSender = this;
 
-                while (lastSender.next != null)
-                {
-                    lastSender = lastSender.next;
-                }
+            while (lastSender.next != null)
+                lastSender = lastSender.next;
 
-                if (value is AbstractSender)
-                {
-                    lastSender.next = value as AbstractSender;
-                }
-            }
+            if (value is AbstractSender)
+                lastSender.next = value as AbstractSender;
         }
-
-        public void Send(string message)
-        {
-            SendMessage(message);
-
-            if (next != null)
-            {
-                next.Send(message);
-            }
-        }
-
-        abstract protected void SendMessage(string message);
     }
+
+    public void Send(string message)
+    {
+        SendMessage(message);
+
+        if (next != null)
+            next.Send(message);
+    }
+
+    abstract protected void SendMessage(string message);
 }
